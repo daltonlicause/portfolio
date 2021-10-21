@@ -1,0 +1,19 @@
+@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@5.2/distr/fira_code.css);
+
+body {
+  font-family: 'Fira Code';
+  &[data-darkmode="true"] {
+    color: #f8f8f2;
+    background-color: #282a36;
+  }
+  &[data-darkmode="false"] {
+    color: #282a36;
+    background-color: #f8f8f2;
+  }
+}
+
+#root {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
