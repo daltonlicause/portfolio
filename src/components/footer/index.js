@@ -3,7 +3,7 @@ import "./styles.scss"
 
 const Footer = () => ( 
   <div className="footer">
-    Made with love by Dalton Licause
+    Made with love by <span>Dalton Licause</span>
   </div>
 );
 

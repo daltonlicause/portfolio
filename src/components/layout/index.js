@@ -2,7 +2,7 @@ import React from "react"
 import Navigation from "../navigation"
 import Footer from "../footer"
 
-import "../../assets/scss/styles.scss"
+import "../../assets/scss/base.scss"
 
 const Layout = (props) => {
   return (
