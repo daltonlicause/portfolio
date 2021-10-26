@@ -1,5 +1,5 @@
 import React from "react";
-import Index from "./pages";
+import Index from "./pages/index";
 
 const App = () => ( 
   <Index />

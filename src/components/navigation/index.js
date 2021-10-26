@@ -1,41 +1,12 @@
 import React from "react";
-import IsDarkMode from "../../helpers/isDarkMode";
+import { NavigationContainer } from "./styled";
+import ThemeToggle from "../themeToggle";
 
-class Navigation extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.componentDidMount = this.componentDidMount.bind(this);
-    this.toggleDarkMode = this.toggleDarkMode.bind(this);
-  }
-
-  componentDidMount() {
-    const isDarkMode = IsDarkMode()
-    document.getElementById("body").setAttribute("data-darkmode", isDarkMode);
-    this.setState({
-      darkMode: isDarkMode
-    })
-  }
-
-  toggleDarkMode() {
-    const darkMode = this.state.darkMode
-
-    this.setState({
-      darkMode: !darkMode
-    }, () => {
-      localStorage.setItem("DARK_MODE", this.state.darkMode);
-      document.getElementById("body").setAttribute("data-darkmode", this.state.darkMode);
-    })
-  }
-
-  render() {
-    return (
-      <div>
-        Navigation Goes here
-        <button onClick={this.toggleDarkMode}>Turn the lights off</button>
-      </div>
-    )
-  }
-}
+const Navigation = ({theme, toggleTheme}) => (
+  <NavigationContainer>
+    Dalton Licause
+    <ThemeToggle theme={theme} toggleTheme={toggleTheme}/>
+  </NavigationContainer>
+)
 
 export default Navigation;

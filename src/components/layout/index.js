@@ -2,15 +2,28 @@ import React from "react"
 import Navigation from "../navigation"
 import Footer from "../footer"
 
-import "../../assets/scss/base.scss"
+import { ThemeProvider } from "styled-components";
+import { isDarkMode } from "../../helpers/isDarkMode";
+import { lightTheme, darkTheme } from "../../styled/theme";
+import { GlobalStyles } from "../../styled/global";
 
 const Layout = (props) => {
+  const [theme, toggleTheme, componentMounted] = isDarkMode();
+  const themeMode = theme === 'light' ? lightTheme : darkTheme;
+
+  if (!componentMounted) {
+    return <div />
+  };
+
   return (
-    <>
-      <Navigation />
-      <>{props.children}</>
-      <Footer />
-    </>
+    <ThemeProvider theme={themeMode}>
+      <>
+        <GlobalStyles />
+        <Navigation theme={theme} toggleTheme={toggleTheme}/>
+        <>{props.children}</>
+        <Footer />
+      </>
+    </ThemeProvider>
   )
 }
 

@@ -1,10 +1,10 @@
 import React from "react";
-import "./styles.scss"
+import { FooterContainer } from './styled'
 
 const Footer = () => ( 
-  <div className="footer">
+  <FooterContainer>
     Made with love by <span>Dalton Licause</span>
-  </div>
+  </FooterContainer>
 );
 
 export default Footer;
