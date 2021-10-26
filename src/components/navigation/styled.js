@@ -3,6 +3,7 @@ import styled from "styled-components"
 export const NavigationContainer = styled.div`
   display: flex;
   flex-flow: row;
+  align-items: center;
   padding: 20px;
 
   button {

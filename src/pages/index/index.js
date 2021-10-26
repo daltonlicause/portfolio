@@ -6,7 +6,7 @@ const Index = () => (
   <Layout>
     <IndexContainer>
       <p>
-        Hi, I'm Dalton, full stack developer with a passion for frontend and design.
+        Hi there, I'm Dalton! Full stack developer with a passion for frontend and design.
       </p>
       <button>Contact Me</button>
     </IndexContainer>
