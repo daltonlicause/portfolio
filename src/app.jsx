@@ -1,8 +1,36 @@
 import React from "react";
 import Index from "./pages/index";
+import D6Website from "./pages/d6-website";
+import D6Catalog from "./pages/d6-catalog";
+import HeypexGlobal from "./pages/heypex-global";
+import Outpost from "./pages/2nd-street-outpost";
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 
 const App = () => ( 
-  <Index />
+  <Router>
+    <Switch>
+      <Route exact path="/">
+        <Index />
+      </Route>
+      <Route exact path="/d6-website">
+        <D6Website />
+      </Route>
+      <Route exact path="/d6-catalog">
+        <D6Catalog />
+      </Route>
+      <Route exact path="/heypex-global">
+        <HeypexGlobal />
+      </Route>
+      <Route exact path="/2nd-street-outpost">
+        <Outpost />
+      </Route>
+    </Switch>
+  </Router>
 );
 
 export default App;
