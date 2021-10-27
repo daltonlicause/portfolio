@@ -1,16 +1,20 @@
 import React from "react";
-import BackHome from "../../components/backHome";
 import Layout  from "../../components/layout";
-import { PageContainer } from "./styled";
+import ProjectLayout from "../../components/projectLayout";
+import Image from "../../assets/imgs/d6Website.png"
+
+const Project = {
+  title: "D6 Inc. Website",
+  desc: "A website built for D6 Inc. using Gatsby JS and content sourced from Netlify CMS.",
+  stack: ["react", "gatsby", "styled components", "netlify cms"],
+  img: Image,
+  live: true,
+  liveLink: "https://d6inc.com"
+};
 
 const D6Website = () => ( 
   <Layout>
-    <PageContainer>
-      <BackHome/>
-      <div className="banner">
-        <p>D6 Website</p>
-      </div>
-    </PageContainer>
+    <ProjectLayout project={Project}/>
   </Layout>
 );
 

@@ -1,16 +1,20 @@
 import React from "react";
-import BackHome from "../../components/backHome";
 import Layout  from "../../components/layout";
-import { PageContainer } from "./styled";
+import ProjectLayout from "../../components/projectLayout";
+import Image from "../../assets/imgs/2ndStOutpost.png"
+
+const Project = {
+  title: "2nd Street Outpost",
+  desc: "A ecommerce website built for 2nd Street Outpost using Shopify.",
+  stack: ["shopify", "adobe illustrator", "adobe photoshop"],
+  img: Image,
+  live: true,
+  liveLink: "https://2ndstoutpost.com"
+};
 
 const Outpost = () => ( 
   <Layout>
-    <PageContainer>
-      <BackHome />
-      <div className="banner">
-        <p>2nd Street Outpost</p>
-      </div>
-    </PageContainer>
+    <ProjectLayout project={Project}/>
   </Layout>
 );
 

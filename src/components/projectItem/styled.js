@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const ProjectContainer = styled.div`
+export const ProjectItemContainer = styled.div`
   display: flex;
   flex-flow: row;
   align-items: center;

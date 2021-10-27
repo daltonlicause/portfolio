@@ -2,7 +2,7 @@ import React from "react";
 import { PageContainer } from "./styled";
 import Memoji from "../../assets/imgs/memoji.gif";
 import Layout  from "../../components/layout";
-import Project from "../../components/project";
+import ProjectItem from "../../components/projectItem";
 
 const Projects = [
   {
@@ -33,7 +33,7 @@ const Index = () => (
         <p>Full stack developer with a passion for frontend and design.</p>
       </div>
       <div className="projects">
-        { Projects.map((project) => <Project project={project}/>) }
+        { Projects.map((project) => <ProjectItem key={project.name} project={project}/>) }
       </div>
     </PageContainer>
   </Layout>

@@ -17,16 +17,16 @@ const App = () => (
       <Route exact path="/">
         <Index />
       </Route>
-      <Route exact path="/d6-website">
+      <Route path="/d6-website">
         <D6Website />
       </Route>
-      <Route exact path="/d6-catalog">
+      <Route path="/d6-catalog">
         <D6Catalog />
       </Route>
-      <Route exact path="/heypex-global">
+      <Route path="/heypex-global">
         <HeypexGlobal />
       </Route>
-      <Route exact path="/2nd-street-outpost">
+      <Route path="/2nd-street-outpost">
         <Outpost />
       </Route>
     </Switch>

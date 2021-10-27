@@ -1,16 +1,21 @@
 import React from "react";
-import BackHome from "../../components/backHome";
 import Layout  from "../../components/layout";
-import { PageContainer } from "./styled";
+import ProjectLayout from "../../components/projectLayout";
+
+import Image from "../../assets/imgs/heypexGlobal.png"
+
+const Project = {
+  title: "Heypex Global Website",
+  desc: "A website built for Heypex Global using Gatsby JS and content sourced from Netlify CMS.",
+  stack: ["react", "gatsby", "styled components", "bulma", "netlify cms"],
+  img: Image,
+  live: true,
+  liveLink: "https://heypexglobal.com"
+};
 
 const HeypexGlobal = () => ( 
   <Layout>
-    <PageContainer>
-      <BackHome/>
-      <div className="banner">
-        <p>Heypex Global</p>
-      </div>
-    </PageContainer>
+    <ProjectLayout project={Project}/>
   </Layout>
 );
 

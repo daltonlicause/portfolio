@@ -13,7 +13,7 @@ export const GlobalStyles = createGlobalStyle`
     background: ${({ theme }) => theme.mainBackground};
     color: ${({ theme }) => theme.text};
     font-family: "Fira Code", monospace;
-    transition: all 0.25s linear;
+    ${'' /* transition: all 0.25s linear; */}
   }
 
   #root {

@@ -1,16 +1,19 @@
 import React from "react";
-import BackHome from "../../components/backHome";
 import Layout  from "../../components/layout";
-import { PageContainer } from "./styled";
+import ProjectLayout from "../../components/projectLayout";
+import Image from "../../assets/imgs/d6Catalog.png";
+
+const Project = {
+  title: "D6 Catalog",
+  desc: "A mobile first catalog website/ PWA built for D6 Inc. using Ionic Framework on the Frontend and a Node rest API to connect with MongoDB.",
+  stack: ['react', 'ionic framework', 'styled components', 'redux', 'node', 'express', 'mongodb'],
+  img: Image,
+  live: true
+};
 
 const D6Catalog = () => ( 
   <Layout>
-    <PageContainer>
-      <BackHome/>
-      <div className="banner">
-        <p>D6 Catalog</p>
-      </div>
-    </PageContainer>
+    <ProjectLayout project={Project}/>
   </Layout>
 );
 
