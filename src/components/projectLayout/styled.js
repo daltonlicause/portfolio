@@ -10,17 +10,29 @@ export const ProjectLayoutContainer = styled.div`
   margin: auto;
 
   .banner {
-    .stack {
-      color: ${colors.yellow}
-    }
-    .live {
-      &.true {
-        color: ${colors.green}
+    .attr {
+      .attr-name {
+        width: 75px;
+        margin-right: 10px;
+        display: inline-block;
+        opacity: .75
       }
-      &.false {
-        color: ${colors.red}
+      .attr-value {
+        &.stack {
+          color: ${colors.yellow}
+        }
+
+        &.live {
+          &.true {
+            color: ${colors.green}
+          }
+          &.false {
+            color: ${colors.red}
+          }
+        }
       }
     }
+
     img {
       width: 100%;
       max-width: 600px;
