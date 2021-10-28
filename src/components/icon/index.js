@@ -5,7 +5,8 @@ import {
   FaExclamationTriangle,
   FaLinkedin,
   FaGithub,
-  FaDribbble
+  FaDribbble,
+  FaDiscord
 } from "react-icons/fa"
 
 const Icons = {
@@ -14,7 +15,8 @@ const Icons = {
   FaExclamationTriangle: FaExclamationTriangle,
   FaLinkedin: FaLinkedin,
   FaGithub: FaGithub,
-  FaDribbble: FaDribbble
+  FaDribbble: FaDribbble,
+  FaDiscord: FaDiscord
 }
 
 const Icon = ({name}) => {

@@ -17,6 +17,11 @@ const Links = [
     name: "Dribbble",
     icon: "FaDribbble",
     href: "https://dribbble.com/Licause"
+  },
+  {
+    name: "Discord",
+    icon: "FaDiscord",
+    href: "https://discord.com/users/171386645684289536"
   }
 ];
 
