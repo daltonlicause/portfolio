@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { colors } from "../../styled/variables";
+import { colors } from "../../../styled/variables";
 
 export const ProjectLayoutContainer = styled.div`
   display: flex;

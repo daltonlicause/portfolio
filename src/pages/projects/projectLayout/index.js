@@ -1,6 +1,6 @@
 import React from "react";
 import { ProjectLayoutContainer } from "./styled";
-import BackHome from "../backHome";
+import BackHome from "../../../components/backHome";
 
 const ProjectLayout = ({project}) => (
   <ProjectLayoutContainer>

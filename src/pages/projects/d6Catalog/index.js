@@ -1,7 +1,7 @@
 import React from "react";
-import Layout  from "../../components/layout";
-import ProjectLayout from "../../components/projectLayout";
-import Image from "../../assets/imgs/d6Catalog.png";
+import Layout  from "../../../components/layout";
+import ProjectLayout from "../projectLayout";
+import Image from "../../../assets/imgs/d6Catalog.png";
 
 const Project = {
   title: "D6 Catalog",

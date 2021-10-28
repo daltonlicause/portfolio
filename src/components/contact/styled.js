@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { colors } from "../../styled/variables";
 
-export const RocketLeagueContainer = styled.div`
+export const ContactContainer = styled.section`
   display: flex;
   flex-flow: column;
   padding: 20px;
@@ -16,9 +16,6 @@ export const RocketLeagueContainer = styled.div`
     }
     .attr-value {
       color: ${colors.purple};
-      &.loading {
-        width: 100px;
-      }
     }
   }
 `;

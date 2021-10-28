@@ -1,7 +1,7 @@
 import React from "react";
-import Layout  from "../../components/layout";
-import ProjectLayout from "../../components/projectLayout";
-import Image from "../../assets/imgs/2ndStOutpost.png"
+import Layout  from "../../../components/layout";
+import ProjectLayout from "../projectLayout";
+import Image from "../../../assets/imgs/2ndStOutpost.png"
 
 const Project = {
   title: "2nd Street Outpost",

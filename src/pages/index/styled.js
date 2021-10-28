@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { colors } from '../../styled/variables';
 
 export const PageContainer = styled.div`
   width: 100%;
@@ -11,7 +12,22 @@ export const PageContainer = styled.div`
     flex-flow: column;
     padding: 0 40px;
     .sub-section {
-      padding: 0 40px;
+      display: flex;
+      flex-flow: column;
+      padding: 20px;
+      
+      .attr {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+
+        .attr-name {
+          margin-right: 10px;
+        }
+        .attr-value {
+          color: ${colors.purple};
+        }
+      }
     }
   }
 `;

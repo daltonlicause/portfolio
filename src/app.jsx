@@ -1,9 +1,9 @@
 import React from "react";
 import Index from "./pages/index";
-import D6Website from "./pages/d6-website";
-import D6Catalog from "./pages/d6-catalog";
-import HeypexGlobal from "./pages/heypex-global";
-import Outpost from "./pages/2nd-street-outpost";
+import D6Website from "./pages/projects/d6Website";
+import D6Catalog from "./pages/projects/d6Catalog";
+import HeypexGlobal from "./pages/projects/heypexGlobal";
+import Outpost from "./pages/projects/2ndStreetOutpost";
 
 import {
   BrowserRouter as Router,
