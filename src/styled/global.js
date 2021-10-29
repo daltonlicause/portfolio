@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { colors } from './variables';
 
 export const GlobalStyles = createGlobalStyle`
   *,
@@ -24,6 +25,14 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
   }
 
+  .purple {
+    color: ${colors.purple};
+  }
+
+  .yellow {
+    color: ${colors.yellow};
+  }
+
   button,
   .button {
     cursor: pointer;
@@ -37,6 +46,9 @@ export const GlobalStyles = createGlobalStyle`
 
   a {
     color: ${({theme}) => theme.accent};
+    &.purple {
+      color: ${colors.purple};
+    }
   }
 
   .accent {

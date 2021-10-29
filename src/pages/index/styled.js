@@ -104,13 +104,12 @@ export const PageContainer = styled.div`
         display: flex;
         flex-flow: row;
         align-items: center;
-        margin: 10px 20px;
+        margin: 10px 0;
         .attr-name {
           margin-right: 10px;
         }
         .attr-value {
           display: block;
-          color: ${colors.purple};
           &.loading {
             width: 100px;
           }

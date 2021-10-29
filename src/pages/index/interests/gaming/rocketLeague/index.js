@@ -30,7 +30,7 @@ const RocketLeague = () => {
       <h4 className="section-headline" >Rocket League</h4>
       <div className="attr">
         <span className="attr-name">Current Rank:</span>
-        <span className={`attr-value ${loading && "loading"}`}>
+        <span className={`attr-value yellow ${loading && "loading"}`}>
         { !loading && rlRank && rlRank }
         { loading && !rlRank && <LoadingBar/> } 
         { !loading && !rlRank && "Diamond II" }
