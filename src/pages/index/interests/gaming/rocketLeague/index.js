@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import find from "lodash/find"
-import { RocketLeagueContainer } from "./styled";
 import LoadingBar from "../../../../../components/loadingBar"
 
 const RocketLeague = () => {
@@ -27,9 +26,8 @@ const RocketLeague = () => {
   }, []);
 
   return (
-    <RocketLeagueContainer>
-      <a href="https://discord.com/users/171386645684289536">Lets Play</a>
-      <h4>Rocket League</h4>
+    <div className="sub-item">
+      <h4 className="section-headline" >Rocket League</h4>
       <div className="attr">
         <span className="attr-name">Current Rank:</span>
         <span className={`attr-value ${loading && "loading"}`}>
@@ -38,7 +36,7 @@ const RocketLeague = () => {
         { !loading && !rlRank && "Diamond II" }
         </span>
       </div>
-    </RocketLeagueContainer>
+    </div>
   )
 }
 

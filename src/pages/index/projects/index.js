@@ -1,22 +1,26 @@
 import React from "react";
-import ProjectItem from "./projectItem";
+import { Link } from "react-router-dom";
 
 const ProjectsArray = [
   {
-    name: "D6 Catalog",
-    link: "/d6-catalog"
+    title: "D6 Inc. Catalog",
+    link: "/d6-catalog",
+    desc: "Mobile first catalog built for D6 Inc. using Ionic Framework for the Frontend and a Node rest API connected to MongoDB."
   },
   {
-    name: "D6 Website",
-    link: "/d6-website"
+    title: "D6 Inc. Website",
+    link: "/d6-website",
+    desc: "Company website built for D6 Inc. using Gatsby JS with content sourced from Netlify CMS."
   },
   {
-    name: "Heypex Global",
-    link: "/heypex-global"
+    title: "Heypex Global Website",
+    link: "/heypex-global",
+    desc: "Company website built for Heypex Global using Gatsby JS with content sourced from Netlify CMS."
   },
   {
-    name: "2nd Street Outpost",
-    link: "/2nd-street-outpost"
+    title: "2nd Street Outpost Website",
+    link: "/2nd-street-outpost",
+    desc: "Ecommerce business website built for 2nd Street Outpost using Shopify."
   },
 
 ]
@@ -25,7 +29,14 @@ const Projects = () => {
   return (
     <section className="projects">
       <h2>&#128104;&#8205;&#128187; Latest Projects</h2>
-      { ProjectsArray.map((project) => <ProjectItem key={project.name} project={project}/>) }
+      { 
+        ProjectsArray.map((item, i) => 
+          <div className="sub-section" key={i}>
+            <Link className="section-headline" to={item.link}>{item.title}</Link> 
+            <p>{item.desc}</p>
+          </div>
+        )
+      }
     </section>
   )
 }

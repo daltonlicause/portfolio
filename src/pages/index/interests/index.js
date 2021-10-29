@@ -7,9 +7,9 @@ const Interests = () => {
   return (
     <section className="interests">
       <h2>&#10024; Interests</h2>
+      <Design />
       <Gaming />
       <Music />
-      <Design />
     </section>
   )
 }
