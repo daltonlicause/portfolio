@@ -1,4 +1,5 @@
 import React from "react";
+import Emoji from "../../../../components/emoji";
 
 const currentRotation = [
   {
@@ -17,7 +18,7 @@ const Music = () => {
 
   return (
     <div className="sub-section">
-      <h3 className="section-headline" >&#127911; Music</h3>
+      <h3 className="section-headline" ><Emoji name="headphone"/> Music</h3>
       <div className="sub-item">
         <h4 className="section-headline">Currently on Rotation</h4>
         {

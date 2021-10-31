@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Emoji from "../../../../components/emoji";
 
 const DesignsArray = [
   {
@@ -24,7 +25,7 @@ const Design = () => {
 
   return (
     <div className="sub-section">
-      <h3 className="section-headline">&#127912; Digital Design</h3>
+      <h3 className="section-headline"><Emoji name="artistPalette"/> Digital Design</h3>
       { 
         DesignsArray.map((item, i) => 
           <div className="sub-item" key={i}>
