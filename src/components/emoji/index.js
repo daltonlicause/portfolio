@@ -1,4 +1,5 @@
 import React from "react";
+import { EmojiContainer } from "./styled";
 
 const Emojis = {
   headphone: <>&#127911; </>,
@@ -14,7 +15,7 @@ const Emojis = {
 }
 
 const Emoji = ({name}) => (
-  <>{Emojis[name]}</>  
+  <EmojiContainer>{Emojis[name]}</EmojiContainer>  
 )
 
 export default Emoji

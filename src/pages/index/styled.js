@@ -9,13 +9,20 @@ export const PageContainer = styled.div`
 
   h2 {
     width: auto;
-    display: inline-flex;
-    margin: 0 auto 10px 0;
-    position: relative;
-    padding-bottom: 10px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
     b {
       margin-left: .5em;
     }
+  }
+  
+  h3 {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
   }
 
   h4 {
@@ -25,45 +32,38 @@ export const PageContainer = styled.div`
   section {
     display: flex;
     flex-flow: column;
-    padding: 20px 0;
+    padding: 0;
     position: relative;
 
     &:after {
       content: "";
-      height: calc(100% - 70px);
-      width: 2px;
-      background-color:  ${colors.dim};
-      position: absolute;
-      margin: 12px;
       z-index: -1;
-      top: 60px;
+      position: absolute;
+      height: calc(100% - 62px);
+      width: 2px;
+      top: 62px;
+      left: 11px;
+      background-color:  ${colors.dim};
       border-radius: 2px;
     }
 
     .sub-section, .sub-item {
       display: flex;
       flex-flow: column;
-      padding: 20px 40px;
+      padding: 20px 0 20px 40px;
       position: relative;
 
       &.sub-item {
         &:after {
           content: "";
           width: 2px;
-          height: calc(100%);
+          height: 100%;
           position: absolute;
           top: 0;
-          left: 9px;
+          left: 8px;
           background-color: ${colors.dim};
           border-radius: 2px;
         } 
-
-        &:last-of-type {
-          &:after { 
-            height: 32.5px;
-            top: -1px;
-          }
-        }
 
         &:first-of-type {
           &:after {
@@ -72,31 +72,46 @@ export const PageContainer = styled.div`
           }
         }
 
+        &:last-of-type,
         &:only-of-type {
           &:after {
             top: -10px;
-            height: 41px;
+            height: 32px;
           }
         }
 
-        .section-headline {
-          &:after {
-            left: -31px;
-          }
+        p {
+          padding: 0;
+          margin: 15px 0 0;
         }
       }
 
-      .section-headline {
+      .section-headline, 
+      .sub-item-headline {
         position: relative;
-        &:after {
+        &:before, &:after {
+          content: "";
           position: absolute;
           background: ${colors.dim};
-          height: 2px;
-          width: 18px;
-          left: -28px;
-          content: "";
-          top: calc(50% - 1px);
           border-radius: 2px;
+        }
+        &:before {
+          width: 2px;
+          height: calc(50% + 1px);
+          left: -29px;
+          top: 0;
+        }
+        &:after {
+          width: 20px;
+          height: 2px;
+          left: -29px;
+          top: calc(50% - 1px);
+        }
+      }
+
+      .sub-item-headline {
+        &:before, &:after {
+          left: -32px;
         }
       }
 

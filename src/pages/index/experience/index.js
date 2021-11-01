@@ -48,9 +48,9 @@ const Experience = () => {
               {item.title}
             </h3>
             <div className="sub-item">
-              <h4 className="section-headline">{item.company}</h4>
-              <p className="item-time">{item.start} - {item.end}</p>
-              <p className="item-role">{item.role}</p>
+              <h4 className="sub-item-headline">{item.company}</h4>
+              <p className="sub-item-time">{item.start} - {item.end}</p>
+              <p className="sub-item-role">{item.role}</p>
             </div>
           </div>
         )

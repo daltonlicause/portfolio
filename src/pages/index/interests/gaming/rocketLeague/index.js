@@ -27,7 +27,7 @@ const RocketLeague = () => {
 
   return (
     <div className="sub-item">
-      <h4 className="section-headline" >Rocket League</h4>
+      <h4 className="sub-item-headline" >Rocket League</h4>
       <div className="attr">
         <span className="attr-name">Current Rank:</span>
         <span className={`attr-value yellow ${loading && "loading"}`}>
