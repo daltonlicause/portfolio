@@ -54,6 +54,8 @@ export const PageContainer = styled.div`
       position: relative;
 
       &.sub-item {
+        padding: 20px 0 20px 35px;
+        
         &:after {
           content: "";
           width: 2px;
@@ -67,16 +69,16 @@ export const PageContainer = styled.div`
 
         &:first-of-type {
           &:after {
-            top: -10px;
-            height: calc(100% + 12px);
+            top: -5px;
+            height: calc(100% + 10px);
           }
         }
 
         &:last-of-type,
         &:only-of-type {
           &:after {
-            top: -10px;
-            height: 32px;
+            top: -5px;
+            height: 30px;
           }
         }
 
@@ -102,7 +104,7 @@ export const PageContainer = styled.div`
           top: 0;
         }
         &:after {
-          width: 20px;
+          width: 15px;
           height: 2px;
           left: -29px;
           top: calc(50% - 1px);
@@ -111,7 +113,7 @@ export const PageContainer = styled.div`
 
       .sub-item-headline {
         &:before, &:after {
-          left: -32px;
+          left: -27px;
         }
       }
 
