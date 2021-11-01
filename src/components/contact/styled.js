@@ -6,16 +6,38 @@ export const ContactContainer = styled.section`
   flex-flow: column;
   padding: 20px;
   
-  .attr {
-    display: flex;
-    flex-flow: row;
-    align-items: center;
+  form {
+    width: 100%;
+    .input-group {
+      display: flex;
+      flex-flow: column;
+      padding: 20px 0;
+      &.half {
+        width: 50%;
+        display: inline-flex;
+        &.half-left {
+          padding: 0 20px 0 0;
+        }
+        &.half-right {
+          padding: ß0 0 0 20px;
+        }
+      }
 
-    .attr-name {
-      margin-right: 10px;
-    }
-    .attr-value {
-      color: ${colors.purple};
+      label {
+        padding-bottom: 10px;
+      }
+      input, textarea {
+        background: transparent;
+        color: ${({theme}) => theme.text};
+        border: 1px solid ${colors.dim};
+        border-radius: 4px;
+        padding: 10px 10px;
+        &:focus{
+          border-color: ${({theme}) => theme.accent};
+          box-shadow: none;
+          outline: none;
+        }
+      }
     }
   }
 `;
