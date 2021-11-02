@@ -47,7 +47,7 @@ const Contact = () => {
   }
 
   const form = (
-    <form name="contact" method="POST" data-netlify="true" onSubmit={(e) => submitForm(e)}>
+    <form name="contact" method="POST" name="netlify" data-netlify="true" onSubmit={(e) => submitForm(e)}>
       <div className="input-group half half-left">
         <label>Name:</label>
         <input type="text" name="name" onChange={(e) => setName(e.target.value)} required={true} value={name}/>
