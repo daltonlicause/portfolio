@@ -9,14 +9,14 @@ const ProjectsArray = [
     desc: "Mobile first catalog built for D6 Inc. using Ionic Framework for the Frontend and a Node rest API connected to MongoDB."
   },
   {
-    title: "D6 Inc. Website",
-    link: "/d6-website",
-    desc: "Company website built for D6 Inc. using Gatsby JS with content sourced from Netlify CMS."
-  },
-  {
     title: "Heypex Global Website",
     link: "/heypex-global",
     desc: "Company website built for Heypex Global using Gatsby JS with content sourced from Netlify CMS."
+  },
+  {
+    title: "D6 Inc. Website",
+    link: "/d6-website",
+    desc: "Company website built for D6 Inc. using Gatsby JS with content sourced from Netlify CMS."
   },
   {
     title: "2nd Street Outpost Website",
