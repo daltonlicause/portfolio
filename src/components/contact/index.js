@@ -17,9 +17,16 @@ const Contact = () => {
     setMessage("");
   }
 
+  const responseTimeout = () => {
+    setTimeout(() => {
+      setResponse("")
+    }, 7000);
+  }
+
   const submitForm = (e) => {
     setLoading(true)
     setStatus(null)
+    responseTimeout("")
 
     const body = encode({
       "form-name": "contact",
@@ -36,42 +43,40 @@ const Contact = () => {
       resetForm()
       setLoading(false)
       setStatus("success")
-      setResponse("Message sent successfully! I'll get in touch with you soon.")
+      setResponse("Message sent successfully! I'll be in touch with you soon.")
+      responseTimeout()
     }).catch(() => {
       setLoading(false)
       setStatus("error")
       setResponse("There was an error trying to send your message. Please try again later.")
+      responseTimeout()
     });
 
     e.preventDefault();
   }
 
-  const form = (
-    <form name="contact" method="POST" name="netlify" data-netlify="true" onSubmit={(e) => submitForm(e)}>
-      <div className="input-group half half-left">
-        <label>Name:</label>
-        <input type="text" name="name" onChange={(e) => setName(e.target.value)} required={true} value={name}/>
-      </div>
-      <div className="input-group half half-right">
-        <label>Email:</label>
-        <input type="email" name="email" onChange={(e) => setEmail(e.target.value)} required={true} value={email}/>
-      </div>
-      <div className="input-group">
-        <label>Message:</label>
-        <textarea name="message" onChange={(e) => setMessage(e.target.value)} required={true} value={message} rows="5"></textarea>
-      </div>
-      <div>
-        <button type="submit" className={`${loading ? "loading" : ""}`}>Send</button>
-      </div>
-      { status && <div>{response}</div> }
-    </form>
-  )
-
   return (
     <ContactContainer className="contact">
       <h2><Emoji name="envelope"/> Contact Me</h2>
       <div className="sub-section">
-        {form}
+        <form name="contact" method="POST" name="netlify" data-netlify="true" onSubmit={(e) => submitForm(e)}>
+          <div className="input-group half half-left">
+            <label>Name:</label>
+            <input type="text" name="name" onChange={(e) => setName(e.target.value)} required={true} value={name}/>
+          </div>
+          <div className="input-group half half-right">
+            <label>Email:</label>
+            <input type="email" name="email" onChange={(e) => setEmail(e.target.value)} required={true} value={email}/>
+          </div>
+          <div className="input-group">
+            <label>Message:</label>
+            <textarea name="message" onChange={(e) => setMessage(e.target.value)} required={true} value={message} rows="5"></textarea>
+          </div>
+          <div>
+            <button type="submit" className={`${loading ? "loading" : ""}`}>Send</button>
+          </div>
+          { status && <div className="response">{response}</div> }
+        </form>
       </div>
     </ContactContainer>
   )

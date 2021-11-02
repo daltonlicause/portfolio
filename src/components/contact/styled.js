@@ -35,6 +35,7 @@ export const ContactContainer = styled.section`
       label {
         padding-bottom: 10px;
       }
+
       input, textarea {
         background: transparent;
         color: ${({theme}) => theme.text};
@@ -59,6 +60,10 @@ export const ContactContainer = styled.section`
         position: relative;
         overflow: hidden;
         color: transparent;
+        height: 0px;
+        margin: 13px 0px;
+        padding: 5px 20px;
+        cursor: wait;
         background: linear-gradient(to right, ${colors.purple}, ${colors.green});
         &:after {
           content: "";
@@ -72,6 +77,10 @@ export const ContactContainer = styled.section`
           border-radius: 4px;
         }
       }
+    }
+
+    .response {
+      padding: 20px 0;
     }
   }
 `;

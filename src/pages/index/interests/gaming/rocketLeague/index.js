@@ -10,8 +10,12 @@ const RocketLeague = () => {
     const getRlData = async () => {
       
       try {
-        let response = await fetch('https://api.tracker.gg/api/v2/rocket-league/standard/profile/epic/licause?');
-        let responseJson = await response.json();
+        const response = await fetch("https://api.tracker.gg/api/v2/rocket-league/standard/profile/epic/licause?", {
+          headers: {
+            "Access-Control-Allow-Origin": "*"
+          }
+        });
+        const responseJson = await response.json();
         const objectData = find(responseJson.data.segments, { metadata: { name: "Ranked Doubles 2v2" } })
         const rank = objectData.stats.tier.metadata.name
         updateLoading(false)
