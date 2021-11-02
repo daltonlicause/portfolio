@@ -15,5 +15,4 @@ export const SocialContainer = styled.div`
      color: ${({theme}) => theme.accent}
    }
  }
-
 `;

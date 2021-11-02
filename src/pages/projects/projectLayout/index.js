@@ -5,7 +5,7 @@ import BackHome from "../../../components/backHome";
 const ProjectLayout = ({project}) => (
   <ProjectLayoutContainer>
     <BackHome />
-    <div className="banner">
+    <section className="banner">
       <h1 className="title">{project.title}</h1>
       <p className="desc">{project.desc}</p>
       <p className="attr">
@@ -20,12 +20,28 @@ const ProjectLayout = ({project}) => (
         <span className="attr-name">live:</span>
         <span className={`attr-value live ${project.live}`}>
           {
-            project.live ? (project.liveLink && <a href={project.liveLink}>{project.liveLink}</a>) || "yes - not available to the public" : "no"
+            project.live ? (project.liveLink && <a href={project.liveLink}>{project.liveLink}</a>) || "yes" : "no"
           }
         </span>
       </p>
       <img className="img" src={project.img} />
-    </div>
+    </section>
+    <section className="goals">
+      <h2>Goals</h2>
+      {project.goals}
+    </section>
+    <section className="stack">
+      <h2>Stack Explained</h2>
+      {project.stackExplained}
+    </section>
+    <section className="challenges">
+      <h2>Challenges</h2>
+      {project.challenges}
+    </section>
+    <section className="takeaways">
+      <h2>Takeways</h2>
+      {project.takeaways}
+    </section>
   </ProjectLayoutContainer>
 )
 
