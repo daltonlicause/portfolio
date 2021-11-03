@@ -1,12 +1,13 @@
 import React from "react";
 import Layout  from "../../../components/layout";
 import ProjectLayout from "../projectLayout";
-import Image from "../../../assets/imgs/d6Catalog.png";
+import Image from "../../../assets/imgs/d6Catalog-page.png";
 
 const Project = {
   title: "D6 Catalog",
   desc: "A mobile first catalog website/ PWA built for D6 Inc. using Ionic Framework on the Frontend and a Node rest API to connect with MongoDB.",
   stack: ['react', 'ionic framework', 'styled components', 'redux', 'node', 'express', 'mongodb'],
+  mobile: true,
   img: Image,
   live: true,
   goals: <p>The purpose of a mobile catalog was started with D6 Inc. Their goal was to solve a problem they found their sales team dealing with. The problem they had was that all of their products lived in a spreadsheet, while it was simple to update it was growing difficult for the sales team to use. They instead wanted a way to easily find and show off their products no matter where they were while also being giving the product team the ability to add and update them. Final project requirements we’re a website/ app that is accessible to only the D6 Inc team that has all of their current and new products.</p>,

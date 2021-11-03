@@ -1,7 +1,7 @@
 import React from "react";
 import Layout  from "../../../components/layout";
 import ProjectLayout from "../projectLayout";
-import Image from "../../../assets/imgs/heypexGlobal.png"
+import Image from "../../../assets/imgs/heypexGlobal-page.png"
 
 const Project = {
   title: "Heypex Global Website",

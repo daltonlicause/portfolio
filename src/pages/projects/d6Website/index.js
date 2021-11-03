@@ -1,7 +1,7 @@
 import React from "react";
 import Layout  from "../../../components/layout";
 import ProjectLayout from "../projectLayout";
-import Image from "../../../assets/imgs/d6Website.png"
+import Image from "../../../assets/imgs/d6Website-page.png"
 
 const Project = {
   title: "D6 Inc. Website",
