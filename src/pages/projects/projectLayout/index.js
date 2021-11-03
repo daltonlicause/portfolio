@@ -45,7 +45,7 @@ const ProjectLayout = ({project}) => (
           }
         </span>
       </p>
-      <div className={`banner-window ${project.mobile && "mobile" }`}>
+      <div className={`banner-window ${project.mobile ? "mobile" : "" }`}>
           <div className="window-header">
             <div className="dots">
               <div></div>

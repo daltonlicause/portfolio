@@ -21,8 +21,8 @@ export const ProjectLayoutContainer = styled.div`
       display: block;
       border-radius: 10px;
       overflow: hidden;
-      border: 1px solid #5e5e5e;
-      box-shadow: 4px 4px 12px 2px rgba(0,0,0,.25);
+      border: 1px solid ${({theme}) => theme.dim};
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,.25);
 
       &.mobile {
         max-width: 300px;
