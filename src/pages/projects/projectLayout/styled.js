@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import { colors } from "../../../styled/variables";
 
 export const ProjectLayoutContainer = styled.div`
   display: flex;
@@ -31,7 +30,7 @@ export const ProjectLayoutContainer = styled.div`
       .window-header {
         width: 100%;
         height: 20px;
-        background-color: ${colors.dim};
+        background-color: ${({theme}) => theme.secondaryBackground};
         display: flex;
         justify-conent: center;
         align-items: center;
@@ -46,13 +45,13 @@ export const ProjectLayoutContainer = styled.div`
             border-radius: 25px;
             margin: 2px;
             :nth-child(1) {
-              background-color: ${colors.red}
+              background-color: #FF605C;
             }
             :nth-child(2) {
-              background-color: ${colors.yellow}
+              background-color: #FFBD44;
             }
             :nth-child(3) {
-              background-color: ${colors.green}
+              background-color: #00CA4E;
             }
           }
           
@@ -72,15 +71,15 @@ export const ProjectLayoutContainer = styled.div`
     }
     .attr-value {
       &.stack {
-        color: ${colors.yellow}
+        color: ${({theme}) => theme.yellow}
       }
 
       &.live {
         &.true {
-          color: ${colors.green}
+          color: ${({theme}) => theme.green}
         }
         &.false {
-          color: ${colors.red}
+          color: ${({theme}) => theme.red}
         }
       }
     }

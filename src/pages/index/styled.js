@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { colors } from '../../styled/variables';
 
 export const PageContainer = styled.div`
   width: 100%;
@@ -43,7 +42,7 @@ export const PageContainer = styled.div`
       width: 2px;
       top: 62px;
       left: 11px;
-      background-color:  ${colors.dim};
+      background-color:  ${({theme}) => theme.dim};
       border-radius: 2px;
     }
 
@@ -63,7 +62,7 @@ export const PageContainer = styled.div`
           position: absolute;
           top: 0;
           left: 8px;
-          background-color: ${colors.dim};
+          background-color: ${({theme}) => theme.dim};
           border-radius: 2px;
         } 
 
@@ -94,7 +93,7 @@ export const PageContainer = styled.div`
         &:before, &:after {
           content: "";
           position: absolute;
-          background: ${colors.dim};
+          background: ${({theme}) => theme.dim};
           border-radius: 2px;
         }
         &:before {

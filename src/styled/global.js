@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components';
-import { colors } from './variables';
 
 export const GlobalStyles = createGlobalStyle`
   *,
@@ -14,7 +13,6 @@ export const GlobalStyles = createGlobalStyle`
     background: ${({ theme }) => theme.mainBackground};
     color: ${({ theme }) => theme.text};
     font-family: "Fira Code", monospace;
-    ${'' /* transition: all 0.25s linear; */}
   }
 
   #root {
@@ -26,11 +24,11 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   .purple {
-    color: ${colors.purple};
+    color: ${({theme}) => theme.purple};
   }
 
   .yellow {
-    color: ${colors.yellow};
+    color: ${({theme}) => theme.yellow};
   }
 
   button,
@@ -47,7 +45,7 @@ export const GlobalStyles = createGlobalStyle`
   a {
     color: ${({theme}) => theme.accent};
     &.purple {
-      color: ${colors.purple};
+      color: ${({theme}) => theme.purple};
     }
   }
 

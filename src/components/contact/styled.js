@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import { colors } from "../../styled/variables";
 
 export const ContactContainer = styled.section`
   display: flex;
@@ -39,7 +38,7 @@ export const ContactContainer = styled.section`
       input, textarea {
         background: transparent;
         color: ${({theme}) => theme.text};
-        border: 1px solid ${colors.dim};
+        border: 1px solid ${({theme}) => theme.dim};
         border-radius: 4px;
         padding: 10px 10px;
         &:focus{
@@ -64,7 +63,7 @@ export const ContactContainer = styled.section`
         margin: 13px 0px;
         padding: 5px 20px;
         cursor: wait;
-        background: linear-gradient(to right, ${colors.purple}, ${colors.green});
+        background: linear-gradient(to right, ${({theme}) => theme.purple}, ${({theme}) => theme.green});
         &:after {
           content: "";
           top: 0;

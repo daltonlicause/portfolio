@@ -12,7 +12,7 @@ const LoadingBarContainer = styled.div`
   position: relative;
   overflow: hidden;
   border-radius: 6px;
-  background: linear-gradient(to right, ${colors.purple}, ${colors.green});
+  background: linear-gradient(to right, ${({theme}) => theme.purple}, ${({theme}) => theme.green});
 
   .bar {
     position:absolute;
@@ -20,7 +20,7 @@ const LoadingBarContainer = styled.div`
     height: 100%;
     display: flex;
     animation: move 2s linear infinite;
-    background-color: ${colors.dim};
+    background-color: ${({theme}) => theme.dim};
     border-radius: 4px;
   }
 `;
