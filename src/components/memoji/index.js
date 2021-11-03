@@ -1,5 +1,5 @@
 import React from "react";
-import MemojiGif from "../../assets/imgs/memoji.gif";
+import MemojiGif from "../../assets/imgs/memoji-min.gif";
 
 const Memoji = () => (
   <img className="memoji" alt="Memoji of myself" src={MemojiGif} width="150px" height="113px"/>
