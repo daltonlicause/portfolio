@@ -1,8 +1,10 @@
 import React from "react";
-import MemojiGif from "../../assets/imgs/memoji-min.gif";
+import MemojiVideo from "../../assets/imgs/memoji.webm";
 
 const Memoji = () => (
-  <img className="memoji" alt="Memoji of myself" src={MemojiGif} width="150px" height="113px"/>
+  <video autoPlay loop muted playsInline> 
+    <source src={MemojiVideo} type="video/webm"/>
+  </video>
 )
 
 export default Memoji
