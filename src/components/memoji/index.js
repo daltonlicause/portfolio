@@ -1,5 +1,5 @@
 import React from "react";
-import MemojiVideo from "../../assets/imgs/memoji.webm";
+import MemojiVideo from "../../assets/videos/memoji.webm";
 
 const Memoji = () => (
   <video autoPlay loop muted playsInline> 
