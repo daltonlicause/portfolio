@@ -34,7 +34,7 @@ module.exports = {
         use: ["file-loader"],
       },
       {
-        test: /\.(webm|mp4)$/,
+        test: /\.(webm|mp4|mov)$/,
         use: ["file-loader"]
       }
     ],
