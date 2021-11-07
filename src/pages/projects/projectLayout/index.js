@@ -12,16 +12,19 @@ const otherProjects = (title) => {
     "2nd Street Outpost": "/2nd-street-outpost"
   };
 
- const otherProjectKeys = Object.keys(projects).filter((key) => ( key !== title ));
+  const otherProjectKeys = Object.keys(projects).filter((key) => ( key !== title ));
 
- return (
-  otherProjectKeys.map((key, i) => (
-    <span key={i} id={i}>
-      <Link  to={projects[key]}>{key}</Link>
-      {otherProjectKeys.length > ++i ? ", " : " "}
-    </span>
-  ))
- )
+  return (
+    otherProjectKeys.map((key, i) => {
+      return (
+        <div className="sub-item">
+          <div className="sub-item-headline" key={i}>
+            <Link  to={projects[key]}>{key}</Link>
+          </div>
+        </div>
+      )
+    })
+  )
 } 
 
 const ProjectLayout = ({project}) => (
@@ -30,70 +33,67 @@ const ProjectLayout = ({project}) => (
     <section className="about">
       <h2><Emoji name="leftArrow"/><BackHome /></h2>
       <div className="sub-section">
-        <h3 className="section-headline"><Emoji name="greenCircle"/>{project.title}</h3>
-        <div className="sub-item">
-          <p className="sub-item-headline">{project.desc}</p>
+        <h1 className="section-headline">{project.title}</h1>
+      </div>
+      {
+        project.liveLink && project.live &&
+        <div className="sub-section">
+          <h3 className={`section-headline live ${project.live}`}>
+            <a href={project.liveLink}>{project.liveLink}</a>
+          </h3>
         </div>
-        <div className="sub-item">
-          <h4 className="sub-item-headline">stack</h4>
-          <span className="sub-item-value stack">
-            { 
-              project.stack.map((item, i) => ++i === project.stack.length ? item : `${item}, `)
-            }
-          </span>
-        </div>
-        <div className="sub-item">
-          <h4 className="sub-item-headline">live</h4>
-          <span className={`sub-item-value live ${project.live}`}>
-            {
-              project.live ? (project.liveLink && <a href={project.liveLink}>{project.liveLink}</a>) || "yes" : "no"
-            }
-          </span>
-        </div>
-        <div className="sub-item">
-          <span className="sub-item-headline">
-            <div className={`img-window ${project.mobile ? "mobile" : "" }`}>
-                <div className="window-header">
-                  <div className="dots">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                  </div>
+      }
+      
+      <div className="sub-section">
+        <span className="section-headline stack">
+          { project.stack.map((item, i) => ++i === project.stack.length ? item : `${item}, `) }
+        </span>
+      </div>
+      
+      <div className="sub-section">
+        <p className="section-headline">{project.desc}</p>
+      </div>
+      <div className="sub-section">
+        <span className="section-headline">
+          <div className={`img-window ${project.mobile ? "mobile" : "" }`}>
+              <div className="window-header">
+                <div className="dots">
+                  <div></div>
+                  <div></div>
+                  <div></div>
                 </div>
-                <img className="window-img" src={project.img} />
-            </div>
-          </span>
-        </div>
-        <div className="sub-item">
-          <h4 className="sub-item-headline">goals</h4>
-          <span className="sub-item-value">
-            {project.goals}
-          </span>
-        </div>
-        <div className="sub-item">
-          <h4 className="sub-item-headline">stack explained</h4>
-          <span className="sub-item-value">
-            {project.stackExplained}
-          </span>
-        </div>
-        <div className="sub-item">
-          <h4 className="sub-item-headline">challenges</h4>
-          <span className="sub-item-value">
-            {project.challenges}
-          </span>
-        </div>
-        <div className="sub-item">
-          <h4 className="sub-item-headline">takeways</h4>
-          <span className="sub-item-value">
-            {project.takeaways}
-          </span>
-        </div>
-        <div className="sub-item">
-          <h4 className="sub-item-headline">other projects</h4>
-          <span className="sub-item-value">
-            { otherProjects(project.title) }
-          </span>
-        </div>
+              </div>
+              <img className="window-img" src={project.img} />
+          </div>
+        </span>
+      </div>
+      <div className="sub-section">
+        <h3 className="section-headline">Goals</h3>
+        <span className="section-value">
+          {project.goals}
+        </span>
+      </div>
+      <div className="sub-section">
+        <h3 className="section-headline">Stack Explained</h3>
+        <span className="section-value">
+          {project.stackExplained}
+        </span>
+      </div>
+      <div className="sub-section">
+        <h3 className="section-headline">Challenges</h3>
+        <span className="section-value">
+          {project.challenges}
+        </span>
+      </div>
+      <div className="sub-section">
+        <h3 className="section-headline">Takeaways</h3>
+        <span className="section-value">
+          {project.takeaways}
+        </span>
+      </div>
+      <div className="sub-section">
+        <h3 className="section-headline"><Emoji name="rightArrow"/> Other Projects</h3>
+        { otherProjects(project.title) }
       </div>
     </section>
   </ProjectPageContainer>

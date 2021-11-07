@@ -12,7 +12,9 @@ const Emojis = {
   sparkles: <>&#10024; </>,
   artistPalette: <>&#127912; </>,
   manTechnologist: <>&#128104;&#8205;&#128187; </>,
-  leftArrow: <>&#9194;</>
+  leftArrow: <>&#9194;</>,
+  rightArrow: <>&#9193;</>,
+  shuffle: <>&#128256;</>
 }
 
 const Emoji = ({name}) => (

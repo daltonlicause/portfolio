@@ -15,16 +15,18 @@ export const ProjectPageContainer = styled(Page)`
       }
     }
     .img-window {
-      margin: 0 auto;
-      display: block;
+      max-width: 100%;
+      display: inline-block;
       border-radius: 10px;
       overflow: hidden;
       border: 1px solid ${({theme}) => theme.dim};
       box-shadow: 0 4px 8px 0 rgba(0,0,0,.25);
 
-      &.mobile {
-        max-width: 300px;
+      img {
+        width: 100%;
+        max-height: 500px;
       }
+      
       .window-header {
         width: 100%;
         height: 20px;
@@ -55,9 +57,7 @@ export const ProjectPageContainer = styled(Page)`
           
         }
       }
-      img {
-        width: 100%;
-      }
+      
     }
   }
 

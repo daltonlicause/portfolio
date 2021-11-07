@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Page = styled.div`
   width: 100%;
   max-width: 800px;
-  margin: 0 auto 60px;
+  margin: 0 auto;
   padding: 20px;
 
   h2 {
@@ -44,12 +44,6 @@ export const Page = styled.div`
       left: 11px;
       background-color:  ${({theme}) => theme.dim};
       border-radius: 2px;
-    }
-
-    &:only-of-type {
-      &:after {
-        height: 30px;
-      }
     }
 
     .sub-section, .sub-item {
@@ -95,6 +89,7 @@ export const Page = styled.div`
 
       .section-headline, 
       .sub-item-headline {
+        margin: 0;
         position: relative;
         &:before, &:after {
           content: "";
