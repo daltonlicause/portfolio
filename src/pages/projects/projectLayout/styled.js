@@ -23,10 +23,10 @@ export const ProjectPageContainer = styled(Page)`
       box-shadow: 0 4px 8px 0 rgba(0,0,0,.25);
 
       img {
-        width: 100%;
+        width: auto;
         max-height: 500px;
       }
-      
+
       .window-header {
         width: 100%;
         height: 20px;
