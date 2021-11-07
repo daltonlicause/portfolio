@@ -1,5 +1,5 @@
 import React, { Suspense } from "react";
-import { PageContainer } from "./styled";
+import { IndexPageContainer } from "./styled";
 import Layout  from "../../components/layout";
 
 import Memoji from "../../components/memoji";
@@ -11,14 +11,14 @@ import Contact from "../../components/contact"
 
 const Index = () => ( 
   <Layout>
-    <PageContainer>
+    <IndexPageContainer>
       <Memoji />
       <About />
       <Projects />
       <Experience/>
       <Interests />
       <Contact />
-    </PageContainer>
+    </IndexPageContainer>
   </Layout>
 );
 

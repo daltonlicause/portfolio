@@ -1,23 +1,21 @@
+import { Page } from "../../../styled/page";
 import styled from "styled-components"
 
-export const ProjectLayoutContainer = styled.div`
+export const ProjectPageContainer = styled(Page)`
   display: flex;
   flex-flow: column;
-  padding: 20px;
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto 60px;
 
-  .banner {
+  .about {
+    a {
+      font-size: 16px;
+    }
     .attr {
       .attr-name {
         width: 75px;
       }
     }
-    .banner-window {
-      width: 80%;
-      max-width: 600px;
-      margin: 40px auto;
+    .img-window {
+      margin: 0 auto;
       display: block;
       border-radius: 10px;
       overflow: hidden;

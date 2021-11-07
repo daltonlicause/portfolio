@@ -11,7 +11,8 @@ const Emojis = {
   purpleCircle: <>&#128995; </>,
   sparkles: <>&#10024; </>,
   artistPalette: <>&#127912; </>,
-  manTechnologist: <>&#128104;&#8205;&#128187; </>
+  manTechnologist: <>&#128104;&#8205;&#128187; </>,
+  leftArrow: <>&#9194;</>
 }
 
 const Emoji = ({name}) => (
