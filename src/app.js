@@ -4,7 +4,11 @@ import D6Website from "./pages/projects/d6Website";
 import D6Catalog from "./pages/projects/d6Catalog";
 import HeypexGlobal from "./pages/projects/heypexGlobal";
 import Outpost from "./pages/projects/2ndStreetOutpost";
+import PageNotFound from "./pages/404"
+import { createBrowserHistory } from "history";
 
+const history = createBrowserHistory();
+ 
 import {
   BrowserRouter as Router,
   Switch,
@@ -12,23 +16,14 @@ import {
 } from "react-router-dom";
 
 const App = () => ( 
-  <Router>
+  <Router history={history}>
     <Switch>
-      <Route exact path="/">
-        <Index />
-      </Route>
-      <Route path="/d6-website">
-        <D6Website />
-      </Route>
-      <Route path="/d6-catalog">
-        <D6Catalog />
-      </Route>
-      <Route path="/heypex-global">
-        <HeypexGlobal />
-      </Route>
-      <Route path="/2nd-street-outpost">
-        <Outpost />
-      </Route>
+      <Route exact path="/" component={Index} />
+      <Route path="/d6-website" component={D6Website} />
+      <Route path="/d6-catalog" component={D6Catalog} />
+      <Route path="/heypex-global" component={HeypexGlobal} />
+      <Route path="/2nd-street-outpost" component={Outpost} />
+      <Route path="*" component={PageNotFound} />
     </Switch>
   </Router>
 );
