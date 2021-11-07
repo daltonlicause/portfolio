@@ -24,6 +24,7 @@ export const ProjectPageContainer = styled(Page)`
 
       img {
         width: auto;
+        max-width: 100%;
         max-height: 500px;
       }
 
