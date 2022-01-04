@@ -63,7 +63,7 @@ const ProjectLayout = ({project}) => (
                   <div></div>
                 </div>
               </div>
-              <img className="window-img" src={project.img} />
+              <img className="window-img" src={project.img} alt={`${project.title} Screenshot`}/>
           </div>
         </span>
       </div>

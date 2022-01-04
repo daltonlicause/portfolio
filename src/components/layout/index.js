@@ -1,6 +1,7 @@
 import React from "react"
 import Navigation from "../navigation"
 import Footer from "../footer"
+import BackToTop from "../backToTop";
 
 import { ThemeProvider } from "styled-components";
 import { isDarkMode } from "../../helpers/isDarkMode";
@@ -22,6 +23,7 @@ const Layout = (props) => {
         <Navigation theme={theme} toggleTheme={toggleTheme}/>
         <>{props.children}</>
         <Footer />
+        <BackToTop />
       </>
     </ThemeProvider>
   )

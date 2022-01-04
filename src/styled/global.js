@@ -38,14 +38,26 @@ export const GlobalStyles = createGlobalStyle`
     margin: auto;
     border-radius: 4px;
     background: transparent;
-    color: ${({theme}) => theme.accent};
-    border: 1px solid ${({theme}) => theme.accent}
+    color: ${({theme}) => theme.link};
+    border: 1px solid ${({theme}) => theme.link};
+    transition: all .2s ease-in;
+    &:hover {
+      color: ${({theme}) => theme.mainBackground};
+      background-color: ${({theme}) => theme.link};
+    }
   }
 
   a {
-    color: ${({theme}) => theme.accent};
+    color: ${({theme}) => theme.link};
+    transition: all .2s ease-in;
     &.purple {
       color: ${({theme}) => theme.purple};
+    }
+    &:not(.no-hover):hover {
+      color: ${({theme}) => theme.mainBackground};
+      background: ${({theme}) => theme.link};
+      text-decoration: none;
+      padding: 0 5px;
     }
   }
 

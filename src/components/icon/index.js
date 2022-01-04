@@ -6,7 +6,8 @@ import {
   FaLinkedin,
   FaGithub,
   FaDribbble,
-  FaDiscord
+  FaDiscord,
+  FaArrowUp
 } from "react-icons/fa"
 
 const Icons = {
@@ -16,7 +17,8 @@ const Icons = {
   FaLinkedin: FaLinkedin,
   FaGithub: FaGithub,
   FaDribbble: FaDribbble,
-  FaDiscord: FaDiscord
+  FaDiscord: FaDiscord,
+  FaArrowUp: FaArrowUp
 }
 
 const Icon = ({name}) => {

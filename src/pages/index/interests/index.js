@@ -9,8 +9,8 @@ const Interests = () => {
     <section className="interests">
       <h2><Emoji name="sparkles"/> Interests</h2>
       <Design />
-      <Gaming />
-      <Music />
+      {/* <Gaming />
+      <Music /> */}
     </section>
   )
 }

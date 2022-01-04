@@ -33,7 +33,9 @@ const Projects = () => {
       { 
         ProjectsArray.map((item, i) => 
           <div className="sub-section" key={i}>
-            <Link className="section-headline" to={item.link}>{item.title}</Link> 
+            <div className="section-headline">
+              <Link to={item.link}>{item.title}</Link> 
+            </div>
             <p>{item.desc}</p>
           </div>
         )

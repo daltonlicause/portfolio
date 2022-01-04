@@ -3,11 +3,11 @@ const darkColors = {
   dim: "#44475a",
   light:	"#f8f8f2",
   blue: "#6272a4",
-  cyan: "#80ffea",
-  green: "#8aff80",
-  orange: "#ff9580",
-  pink: "#ff80bf",
-  purple: "#9580ff",
+  cyan: "#8be9fd",
+  green: "#50fa7b",
+  orange: "#ffb86c",
+  pink: "#ff79c6",
+  purple: "#bd93f9",
   red: "#ff5555",
   yellow: "#f1fa8c"
 }
@@ -39,7 +39,9 @@ export const lightTheme = {
   pink: lightColors.pink,
   purple: lightColors.purple,
   red: lightColors.red,
-  yellow: lightColors.yellow
+  yellow: lightColors.yellow,
+  link: lightColors.purple,
+  linkHover: lightColors.green
 }
 
 export const darkTheme = {
@@ -55,5 +57,7 @@ export const darkTheme = {
   pink: darkColors.pink,
   purple: darkColors.purple,
   red: darkColors.red,
-  yellow: darkColors.yellow
+  yellow: darkColors.yellow,
+  link: darkColors.green,
+  linkHover: darkColors.purple
 }

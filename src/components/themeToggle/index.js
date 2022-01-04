@@ -6,7 +6,7 @@ const ThemeToggle = ({ theme, toggleTheme}) => {
   const isLight = theme === "light";
 
   return (
-    <ToggleButton onClick={toggleTheme}>
+    <ToggleButton onClick={toggleTheme} aria-label="Toggle Site Theme">
       { isLight ? <Icon name="FaMoon"/> : <Icon name="FaSun"/> }
     </ToggleButton>
   )

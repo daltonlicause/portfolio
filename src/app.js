@@ -10,7 +10,7 @@ import { createBrowserHistory } from "history";
 const history = createBrowserHistory();
  
 import {
-  BrowserRouter as Router,
+  Router,
   Switch,
   Route
 } from "react-router-dom";

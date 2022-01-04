@@ -29,7 +29,9 @@ const Design = () => {
       { 
         DesignsArray.map((item, i) => 
           <div className="sub-item" key={i}>
-            <Link className="sub-item-headline" to={item.link}>{item.title}</Link> 
+            <div className="sub-item-headline">
+              <Link to={item.link}>{item.title}</Link> 
+            </div>
             <p className="sub-item-desc">{item.desc}</p>
           </div>
         )

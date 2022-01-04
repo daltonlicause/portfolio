@@ -30,7 +30,7 @@ const Social = () => {
     <SocialContainer>
       {
         Links.map((link) => (
-          <a href={link.href} key={link.name}>
+          <a className="no-hover" href={link.href} key={link.name} aria-label={link.name}>
             <Icon name={link.icon}/>
           </a>
         ))

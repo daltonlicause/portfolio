@@ -14,6 +14,11 @@ export const ProjectPageContainer = styled(Page)`
         width: 75px;
       }
     }
+
+    .stack {
+      color: ${({theme}) => theme.yellow};    
+    }
+
     .img-window {
       max-width: 100%;
       display: inline-block;
