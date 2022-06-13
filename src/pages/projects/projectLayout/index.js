@@ -18,8 +18,8 @@ const otherProjects = (title) => {
   return (
     otherProjectKeys.map((key, i) => {
       return (
-        <div className="sub-item">
-          <div className="sub-item-headline" key={i}>
+        <div className="sub-item" key={i}>
+          <div className="sub-item-headline">
             <Link  to={projects[key]}>{key}</Link>
           </div>
         </div>
