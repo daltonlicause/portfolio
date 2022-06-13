@@ -53,6 +53,15 @@ export const GlobalStyles = createGlobalStyle`
     &.purple {
       color: ${({theme}) => theme.purple};
     }
+    &.plain {
+      color: ${({theme}) => theme.text};
+    }
+    &.no-decoration {
+      text-decoration: none;
+    }
+    &:hover {
+      color: ${({theme}) => theme.accent};
+    }
     &:not(.no-hover):hover {
       color: ${({theme}) => theme.mainBackground};
       background: ${({theme}) => theme.link};

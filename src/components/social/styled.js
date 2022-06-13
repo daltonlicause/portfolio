@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SocialContainer = styled.div`
- margin: 10px;
+ margin: 10px 0;
  display: flex;
  justify-content: center;
  align-items: spaced-evenly;

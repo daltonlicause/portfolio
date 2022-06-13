@@ -9,8 +9,18 @@ export const FooterContainer = styled.div`
 
   h4 {
     font-weight: 400;
+    span {
+      color: ${({ theme }) => theme.accent};
+    }
   }
-  span {
-    color: ${({ theme }) => theme.accent};
+
+  .navigation {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
   }
 `;
