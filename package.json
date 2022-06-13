@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "Dalton Licause - 2021 Portfolio",
+  "description": "Dalton Licause - 2022 Portfolio",
   "main": "index.js",
   "scripts": {
     "start": "webpack serve  --hot --open",
