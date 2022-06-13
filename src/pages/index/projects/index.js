@@ -4,6 +4,11 @@ import Emoji from "../../../components/emoji";
 
 const ProjectsArray = [
   {
+    title: "VGAN Chocolates Website",
+    link: "/vgan-chocolates",
+    desc: "Ecommerce store front built for VGAN Chocolates using Shopify."
+  },
+  {
     title: "D6 Inc. Catalog",
     link: "/d6-catalog",
     desc: "Mobile first catalog built for D6 Inc. using Ionic Framework for the Frontend and a Node rest API connected to MongoDB."

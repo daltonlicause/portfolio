@@ -6,7 +6,7 @@ import Image from "../../../assets/imgs/2ndStOutpost-page.png"
 const Project = {
   title: "2nd Street Outpost",
   desc: "A ecommerce website built for 2nd Street Outpost using Shopify.",
-  stack: ["shopify", "adobe illustrator", "adobe photoshop"],
+  stack: ["shopify", "liquid", "adobe illustrator", "adobe photoshop"],
   img: Image,
   live: true,
   liveLink: "https://2ndstoutpost.com",

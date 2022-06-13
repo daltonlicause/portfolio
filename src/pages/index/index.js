@@ -16,7 +16,7 @@ const Index = () => (
       <About />
       <Projects />
       <Experience/>
-      <Interests />
+      {/* <Interests /> */}
       <Contact />
     </IndexPageContainer>
   </Layout>

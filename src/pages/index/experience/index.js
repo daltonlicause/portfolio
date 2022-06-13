@@ -6,9 +6,9 @@ const ExperienceArray = [
     company: "Heypex Global",
     title:  "VP of  Technology",
     start: "July 2020",
-    end: "Present",
+    end: "June 2022",
     role: "Lead the day to day business IT operations and manage all client projects related to technology - development, ecommerce, and digital design.",
-    present: true
+    present: false
   },
   {
     company:  "Collective Bias/ Inmar Intelligence",
