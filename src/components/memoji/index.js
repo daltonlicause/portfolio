@@ -5,8 +5,8 @@ import MemojiPNG from "../../assets/imgs/memoji.png";
 
 const Memoji = () => (
   <video playsInline autoPlay muted loop> 
-    <source src={MemojiWEBM} type="video/webm"/>
     <source src={MemojiMOV} type="video/quicktime"/>
+    <source src={MemojiWEBM} type="video/webm"/>
     <img src={MemojiPNG} alt="Dalton's Memoji"/>
   </video>
 )
