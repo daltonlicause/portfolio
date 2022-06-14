@@ -36,10 +36,10 @@ export const GlobalStyles = createGlobalStyle`
     cursor: pointer;
     padding: 10px 20px;
     margin: auto;
-    border-radius: 4px;
+    border-radius: 25px;
     background: transparent;
     color: ${({theme}) => theme.link};
-    border: 1px solid ${({theme}) => theme.link};
+    border: 2px solid ${({theme}) => theme.link};
     transition: all .2s ease-in;
     &:hover {
       color: ${({theme}) => theme.mainBackground};
@@ -73,4 +73,14 @@ export const GlobalStyles = createGlobalStyle`
   .accent {
     color: ${({theme}) => theme.accent};
   }
+
+  h2, h3, h4 {
+    font-weight: normal;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+
+  
 `;

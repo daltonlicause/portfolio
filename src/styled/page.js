@@ -12,7 +12,6 @@ export const Page = styled.div`
     margin: 0;
     padding: 0;
     align-items: center;
-    font-weight: normal;
     b {
       margin-left: .5em;
     }
@@ -23,7 +22,6 @@ export const Page = styled.div`
     align-items: center;
     margin: 0;
     padding: 0;
-    font-weight: normal;
   }
 
   h4 {

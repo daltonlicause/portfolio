@@ -57,7 +57,7 @@ const Contact = () => {
 
   return (
     <ContactContainer className="contact">
-      <h2><Emoji name="envelope"/> Contact Me</h2>
+      <h2 className="bold"><Emoji name="envelope"/> Contact Me</h2>
       <div className="sub-section">
         <form name="contact" method="POST" name="netlify" data-netlify="true" onSubmit={(e) => submitForm(e)}>
           <div className="input-group half half-left">

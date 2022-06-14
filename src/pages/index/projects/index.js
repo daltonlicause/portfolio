@@ -34,7 +34,7 @@ const ProjectsArray = [
 const Projects = () => {
   return (
     <section className="projects">
-      <h2><Emoji name="manTechnologist"/> Latest Projects</h2>
+      <h2 className="bold"><Emoji name="manTechnologist"/> Latest Projects</h2>
       { 
         ProjectsArray.map((item, i) => 
           <div className="sub-section" key={i}>

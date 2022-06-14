@@ -39,7 +39,7 @@ const Experience = () => {
 
   return (
     <section className="experience">
-      <h2><Emoji name="greenCheck"/> Experience</h2>
+      <h2 className="bold"><Emoji name="greenCheck"/> Experience</h2>
       {
         ExperienceArray.map((item, i) =>
           <div className="sub-section" key={i}>

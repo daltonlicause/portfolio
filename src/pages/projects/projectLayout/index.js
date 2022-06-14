@@ -69,25 +69,25 @@ const ProjectLayout = ({project}) => (
         </span>
       </div>
       <div className="sub-section">
-        <h3 className="section-headline">Goals</h3>
+        <h3 className="section-headline bold">Goals</h3>
         <span className="section-value">
           {project.goals}
         </span>
       </div>
       <div className="sub-section">
-        <h3 className="section-headline">Stack Explained</h3>
+        <h3 className="section-headline bold">Stack Explained</h3>
         <span className="section-value">
           {project.stackExplained}
         </span>
       </div>
       <div className="sub-section">
-        <h3 className="section-headline">Challenges</h3>
+        <h3 className="section-headline bold">Challenges</h3>
         <span className="section-value">
           {project.challenges}
         </span>
       </div>
       <div className="sub-section">
-        <h3 className="section-headline">Takeaways</h3>
+        <h3 className="section-headline bold">Takeaways</h3>
         <span className="section-value">
           {project.takeaways}
         </span>
