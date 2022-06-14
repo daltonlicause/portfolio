@@ -13,6 +13,7 @@ const BackToTop = () => {
         setShowButton(false);
       }
     })
+    return () => setShowButton(false);
   }, []);
 
   const scrollToTop = () => {

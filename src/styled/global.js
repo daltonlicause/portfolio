@@ -33,6 +33,7 @@ export const GlobalStyles = createGlobalStyle`
 
   button,
   .button {
+    display: inline-flex;
     cursor: pointer;
     padding: 10px 20px;
     margin: auto;
