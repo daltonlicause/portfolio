@@ -61,16 +61,16 @@ const Contact = () => {
       <div className="sub-section">
         <form name="contact" method="POST" name="netlify" data-netlify="true" onSubmit={(e) => submitForm(e)}>
           <div className="input-group half half-left">
-            <label>Name:</label>
-            <input type="text" name="name" onChange={(e) => setName(e.target.value)} required={true} value={name}/>
+            <label for="name">Name:</label>
+            <input id="name" type="text" name="name" onChange={(e) => setName(e.target.value)} required={true} value={name}/>
           </div>
           <div className="input-group half half-right">
-            <label>Email:</label>
-            <input type="email" name="email" onChange={(e) => setEmail(e.target.value)} required={true} value={email}/>
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email" onChange={(e) => setEmail(e.target.value)} required={true} value={email}/>
           </div>
           <div className="input-group">
-            <label>Message:</label>
-            <textarea name="message" onChange={(e) => setMessage(e.target.value)} required={true} value={message} rows="5"></textarea>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" onChange={(e) => setMessage(e.target.value)} required={true} value={message} rows="5"></textarea>
           </div>
           <div>
             <button type="submit" className={`${loading ? "loading" : ""}`}>Send</button>

@@ -7,7 +7,7 @@ export const FooterContainer = styled.div`
   background: ${({ theme }) => theme.secondaryBackground};
   border-top: 2px solid ${({theme}) => theme.accent};
 
-  h4 {
+  p {
     font-weight: 400;
     span {
       color: ${({ theme }) => theme.accent};
