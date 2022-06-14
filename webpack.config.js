@@ -12,6 +12,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: "./public/index.html",
+      favicon: './public/favicon.ico',
     }),
   ],
   resolve: {
@@ -20,6 +21,11 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        test: /\.(html)$/,
+        loader: 'html',
+        exclude: /index\.html$/
+      },
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,

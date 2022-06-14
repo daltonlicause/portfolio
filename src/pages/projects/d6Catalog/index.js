@@ -4,7 +4,7 @@ import ProjectLayout from "../projectLayout";
 import Image from "../../../assets/imgs/d6Catalog-page.png";
 
 const Project = {
-  title: "D6 Catalog",
+  title: "D6 Inc. Catalog",
   desc: "A mobile first catalog website/ PWA built for D6 Inc. using React with Ionic Framework on the Frontend and a Node REST API to connected to MongoDB & Google Cloud Storage.",
   stack: ['react', 'ionic framework', 'styled components', 'redux', 'google cloud storage', 'node', 'express', 'mongodb'],
   mobile: true,

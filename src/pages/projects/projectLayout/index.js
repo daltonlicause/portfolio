@@ -7,7 +7,7 @@ import Emoji from "../../../components/emoji";
 const otherProjects = (title) => {
   const projects = {
     "VGAN Chocolates": "/vgan-chocolates",
-    "D6 Catalog": "/d6-catalog",
+    "D6 Inc. Catalog": "/d6-catalog",
     "D6 Inc. Website": "/d6-website",
     "Heypex Global Website": "/heypex-global",
     "2nd Street Outpost": "/2nd-street-outpost"
