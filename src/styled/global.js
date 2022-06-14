@@ -13,6 +13,7 @@ export const GlobalStyles = createGlobalStyle`
     background: ${({ theme }) => theme.mainBackground};
     color: ${({ theme }) => theme.text};
     font-family: "Fira Code", monospace;
+    font-display: fallback;
   }
 
   #root {
@@ -82,6 +83,4 @@ export const GlobalStyles = createGlobalStyle`
   .bold {
     font-weight: bold;
   }
-
-  
 `;
