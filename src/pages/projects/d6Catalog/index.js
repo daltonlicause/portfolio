@@ -5,8 +5,8 @@ import Image from "../../../assets/imgs/d6Catalog-page.png";
 
 const Project = {
   title: "D6 Inc. Catalog",
-  desc: "A mobile first catalog website/ PWA built for D6 Inc. using React with Ionic Framework on the Frontend and a Node REST API to connected to MongoDB & Google Cloud Storage.",
-  stack: ['react', 'ionic framework', 'styled components', 'redux', 'google cloud storage', 'node', 'express', 'mongodb'],
+  desc: "A mobile first catalog website/ PWA built for D6 Inc. using React with Ionic Framework on the Frontend and a Node REST API connected to MongoDB & Google Cloud Storage.",
+  stack: ["javascript", "react", "ionic framework", "styled components", "sass", "redux", "google cloud storage", "node", "express", "jwt", "mongodb"],
   mobile: true,
   img: Image,
   live: true,

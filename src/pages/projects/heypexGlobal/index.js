@@ -6,7 +6,7 @@ import Image from "../../../assets/imgs/heypexGlobal-page.png"
 const Project = {
   title: "Heypex Global Website",
   desc: "A website built for Heypex Global using Gatsby JS and content sourced from Netlify CMS.",
-  stack: ["react", "gatsby", "styled components", "bulma", "graphql", "netlify cms"],
+  stack: ["javascript", "react", "gatsby", "styled components", "sass", "bulma", "html", "graphql", "netlify cms"],
   img: Image,
   live: true,
   liveLink: "https://heypexglobal.com",

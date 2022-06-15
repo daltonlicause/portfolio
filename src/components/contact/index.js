@@ -59,7 +59,7 @@ const Contact = () => {
     <ContactContainer className="contact">
       <h2 className="bold"><Emoji name="envelope"/> Contact Me</h2>
       <div className="sub-section">
-        <form name="contact" method="POST" name="netlify" data-netlify="true" onSubmit={(e) => submitForm(e)}>
+        <form method="POST" name="netlify" data-netlify="true" onSubmit={(e) => submitForm(e)}>
           <div className="input-group half half-left">
             <label for="name">Name:</label>
             <input id="name" type="text" name="name" onChange={(e) => setName(e.target.value)} required={true} value={name}/>

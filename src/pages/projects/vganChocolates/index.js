@@ -6,7 +6,7 @@ import Image from "../../../assets/imgs/VGANChocolates-page.png";
 const Project = {
   title: "VGAN Chocolates",
   desc: "A one of a kind ecommerce store front built for VGAN Chocolates using Shopify.",
-  stack: ["shopify", "liquid", "adobe illustrator", "adobe photoshop"],
+  stack: ["shopify", "liquid", "javascript", "css", "html", "adobe illustrator", "adobe photoshop"],
   mobile: false,
   img: Image,
   live: true,
