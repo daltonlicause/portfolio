@@ -4,10 +4,10 @@ import Emoji from "../../../components/emoji";
 const ExperienceArray = [
   {
     company: "Heypex Global",
-    title:  "VP of  Technology",
+    title:  " Lead Software Engineer",
     start: "July 2020",
     end: "June 2022",
-    role: "Lead the day to day business IT operations and manage all client projects related to technology - development, ecommerce, and digital design.",
+    role: "Managed and developed all client projects related to technology - web development, ecommerce, and digital design. Tech stack ranged from MERN (MongoDB, Express, React JS, Node Js) to JAMstack and Shopify/ Liquid",
     present: false
   },
   {
@@ -15,7 +15,7 @@ const ExperienceArray = [
     title: "Software Engineer",
     start: "July 2017",
     end: "July 2020",
-    role: "Worked as part of the engineering team towards development and maintaining of in-house applications, micro-services, and projects.",
+    role: "Collaborated as part of the engineering team towards development and maintenance of in-house applications & micro-services. Tech stack included Ruby on Rails, PostgreSQL, Vanilla Javascript and React JS, Docker/ Kubernetes.",
     present: false
   },
   {
