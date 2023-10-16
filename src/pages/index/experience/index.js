@@ -3,6 +3,14 @@ import Emoji from "../../../components/emoji";
 
 const ExperienceArray = [
   {
+    company: "Aware",
+    title:  " Software Engineer II",
+    start: "Sept. 2022",
+    end: "Present",
+    role: "",
+    present: true
+  },
+  {
     company: "Heypex Global",
     title:  " Lead Software Engineer",
     start: "July 2020",
