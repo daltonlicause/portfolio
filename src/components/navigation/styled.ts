@@ -14,9 +14,16 @@ export const NavigationContainer = styled.nav`
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+
+    @media (max-width: 480px) {
+      width: 160px;
+      span {
+        display: none;
+      }
+    }
   }
 
   button {
-    margin: 0 0 0 auto;
+    margin: 14px 0 auto auto;
   }
 `;
