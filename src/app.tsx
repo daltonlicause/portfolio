@@ -15,23 +15,27 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import AppProvider from "providers/appProvider";
 
-const App = () => ( 
-  <BrowserRouter>
-    <ScrollToTop />
-    <Routes>
-      <Route index path="/" element={<Index />} />
-      <Route path="/cms-dashboard" element={<CMSDashboard />} />
-      <Route path="/app-notifier" element={<AppNotifier />} />
-      <Route path="/d6-catalog" element={<D6Catalog />} />
-      <Route path="/d6-website" element={<D6Website />} />
-      <Route path="/d6-catalog" element={<D6Catalog />} />
-      <Route path="/heypex-global" element={<HeypexGlobal />} />
-      <Route path="/2nd-street-outpost" element={<Outpost />} />
-      <Route path="/vgan-chocolates" element={<VGANChocolates />} />
-      <Route path="*" element={<PageNotFound />} />
-    </Routes>
-  </BrowserRouter>
+const App = () => (
+  <AppProvider>
+    <BrowserRouter>
+      <ScrollToTop />
+      <Routes>
+        <Route index path="/" element={<Index />} />
+        <Route path="/cms-dashboard" element={<CMSDashboard />} />
+        <Route path="/app-notifier" element={<AppNotifier />} />
+        <Route path="/d6-catalog" element={<D6Catalog />} />
+        <Route path="/d6-website" element={<D6Website />} />
+        <Route path="/d6-catalog" element={<D6Catalog />} />
+        <Route path="/heypex-global" element={<HeypexGlobal />} />
+        <Route path="/2nd-street-outpost" element={<Outpost />} />
+        <Route path="/vgan-chocolates" element={<VGANChocolates />} />
+        <Route path="*" element={<PageNotFound />} />
+      </Routes>
+    </BrowserRouter>
+  </AppProvider>
+  
 );
 
 export default App;

@@ -18,7 +18,7 @@ const otherProjects = (title: string) => {
   const otherProjectKeys = Object.keys(projects).filter((key) => ( key !== title ));
 
   return (
-    <menu> 
+    <menu className="other-projects"> 
       {
         otherProjectKeys.map((key) => {
           return (
@@ -32,37 +32,37 @@ const otherProjects = (title: string) => {
   )
 } 
 
-const ProjectLayout = (props: {project: {[key: string]: any;}}) => (
+const ProjectLayout = ({ project }: {project: {[key: string]: any;}}) => (
   <ProjectPageContainer>
     
     <article className="about">
       <h2><Emoji name={Emojis.leftArrow}/><BackHome /></h2>
       <header className="sub-section">
-        <h1 className="section-headline">{props.project.title}</h1>
+        <h1 className="section-headline">{project.title}</h1>
       </header>
       {
-        props.project.liveLink && props.project.live &&
+        project.liveLink && project.live &&
         <section className="sub-section">
-          <h3 className={`section-headline live ${props.project.live}`}>
-            <a href={props.project.liveLink}>{props.project.liveLink}</a>
+          <h3 className={`section-headline live ${project.live}`}>
+            <a href={project.liveLink}>{project.liveLink}</a>
           </h3>
         </section>
       }
       
       <section className="sub-section">
         <dl className="section-headline stack">
-          { props.project.stack.map((item: string, i: number) => <dt key={item}>{++i === props.project.stack.length ? item : `${item}, `}</dt>) }
+          { project.stack.map((item: string, i: number) => <dt key={item}>{++i === project.stack.length ? item : `${item}, `}</dt>) }
         </dl>
       </section>
       
       <section className="sub-section">
-        <p className="section-headline">{props.project.desc}</p>
+        <p className="section-headline">{project.desc}</p>
       </section>
 
-      {props.project.img && (
+      {project.img && (
         <section className="sub-section">
           <span className="section-headline">
-            <div className={`img-window ${props.project.mobile ? "mobile" : "" }`}>
+            <div className={`img-window ${project.mobile ? "mobile" : "" }`}>
                 <div className="window-header">
                   <div className="dots">
                     <div></div>
@@ -70,7 +70,7 @@ const ProjectLayout = (props: {project: {[key: string]: any;}}) => (
                     <div></div>
                   </div>
                 </div>
-                <img className="window-img" src={props.project.img} alt={`${props.project.title} Screenshot`}/>
+                <img className="window-img" src={project.img} alt={`${project.title} Screenshot`}/>
             </div>
           </span>
         </section>
@@ -79,30 +79,30 @@ const ProjectLayout = (props: {project: {[key: string]: any;}}) => (
       <section className="sub-section">
         <h3 className="section-headline bold">Goals</h3>
         <span className="section-value">
-          {props.project.goals}
+          {project.goals}
         </span>
       </section>
       <section className="sub-section">
         <h3 className="section-headline bold">Stack Explained</h3>
         <span className="section-value">
-          {props.project.stackExplained}
+          {project.stackExplained}
         </span>
       </section>
       <section className="sub-section">
         <h3 className="section-headline bold">Challenges</h3>
         <span className="section-value">
-          {props.project.challenges}
+          {project.challenges}
         </span>
       </section>
       <section className="sub-section">
         <h3 className="section-headline bold">Takeaways</h3>
         <span className="section-value">
-          {props.project.takeaways}
+          {project.takeaways}
         </span>
       </section>
       <section className="sub-section">
         <h3 className="section-headline"><Emoji name={Emojis.rightArrow}/> Other Projects</h3>
-        { otherProjects(props.project.title) }
+        { otherProjects(project.title) }
       </section>
     </article>
   </ProjectPageContainer>

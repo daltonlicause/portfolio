@@ -2,13 +2,13 @@ import * as React from "react";
 import { ToggleButton } from './styled'
 import Icon from 'components/icon'
 import { FaMoon, FaSun } from "react-icons/fa";
+import { useContext } from "providers/appProvider";
 
-const ThemeToggle = (props: { theme: string, toggleTheme: () => void}) => {
-  const isLight = props.theme === "light";
-
+const ThemeToggle = () => {
+  const { theme, toggleTheme} = useContext();
   return (
-    <ToggleButton onClick={props.toggleTheme} aria-label="Toggle Site Theme">
-      { isLight ? <Icon iconType={FaMoon}/> : <Icon iconType={FaSun}/> }
+    <ToggleButton onClick={() => toggleTheme()} aria-label="Toggle Site Theme">
+      { theme === "light" ? <Icon iconType={FaMoon}/> : <Icon iconType={FaSun}/> }
     </ToggleButton>
   )
 }

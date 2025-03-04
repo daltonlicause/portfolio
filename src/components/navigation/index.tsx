@@ -5,7 +5,8 @@ import ThemeToggle from "components/themeToggle";
 import Social from "components/social";
 import Resume from "assets/resume.pdf";
 
-const Navigation = (props: {theme: string, toggleTheme: () => void}) => (
+const Navigation = () => {
+  return (
   <NavigationContainer>
     <div className="links-container">
       <Link to="/" className="home no-decoration no-hover plain"><h4>Dalton Licause</h4></Link>
@@ -14,8 +15,9 @@ const Navigation = (props: {theme: string, toggleTheme: () => void}) => (
       <span>&nbsp;|&nbsp;</span>
       <Social />
     </div>
-    <ThemeToggle theme={props.theme} toggleTheme={props.toggleTheme}/>
+    <ThemeToggle />
   </NavigationContainer>
 )
+}
 
 export default Navigation;

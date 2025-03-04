@@ -93,6 +93,7 @@ export const ProjectPageContainer = styled(Page)`
   }
 
   .other-projects {
-    margin: 60px 0 0;
+    margin: 0;
+    padding: 0;
   }
 `;

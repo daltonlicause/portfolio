@@ -22,8 +22,8 @@ export const Icons = {
   FaArrowUp: FaArrowUp
 }
 
-const Icon = (props: {iconType?: IconType}) => {
-  const IconComponent = props.iconType ?? Icons["FaExclamationTriangle"];
+const Icon = ({ iconType }: {iconType?: IconType}) => {
+  const IconComponent = iconType ?? Icons["FaExclamationTriangle"];
 
   return <IconComponent />
 };

@@ -20,8 +20,8 @@ export const Emojis = {
 type EmojisKey = keyof typeof Emojis;
 type EmojiValues = typeof Emojis[EmojisKey];
 
-const Emoji = (props: {name: EmojiValues}) => (
-  <EmojiContainer>{props.name}</EmojiContainer>  
+const Emoji = ({ name }: {name: EmojiValues}) => (
+  <EmojiContainer>{name}</EmojiContainer>  
 )
 
 export default Emoji
