@@ -6,12 +6,12 @@ const ProjectsArray = [
   {
     title: "App Notifier",
     link: "/app-notifier",
-    desc: "In-App notification queue processor for  built with Node.js, TypeScript, and BullMQ."
+    desc: "In-App notification queue processor for expo in-app notifications built with Node.js, TypeScript, and BullMQ."
   },
   {
     title: "CMS Dashboard",
     link: "/cms-dashboard",
-    desc: "Internal dashboard and CMS developed for  using Next.js & Tailwind CSS."
+    desc: "Internal dashboard and CMS developed using Next.js & Tailwind CSS."
   },
   {
     title: "VGAN Chocolates Website",

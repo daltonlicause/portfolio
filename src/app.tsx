@@ -1,7 +1,7 @@
 import * as React from "react";
 import Index from "./pages/index/index";
-import CMSDashboard from './pages/projects/cmsDashboard';
-import AppNotifier from './pages/projects/appNotifier';
+import CMSDashboard from "./pages/projects/cmsDashboard";
+import AppNotifier from "./pages/projects/appNotifier";
 import D6Website from "./pages/projects/d6Website";
 import D6Catalog from "./pages/projects/d6Catalog";
 import HeypexGlobal from "./pages/projects/heypexGlobal";

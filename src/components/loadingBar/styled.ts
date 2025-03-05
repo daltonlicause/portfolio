@@ -18,7 +18,7 @@ const LoadingBarContainer = styled.div`
     width: calc(100% * 4/7);
     height: 100%;
     display: flex;
-    animation: move 2s linear infinite;
+    animation: move 10s linear infinite;
     background-color: ${({theme}) => theme.dim};
     border-radius: 4px;
   }
