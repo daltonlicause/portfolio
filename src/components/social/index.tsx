@@ -6,7 +6,7 @@ const Links = [
   {
     name: "LinkedIn",
     icon: Icons.FaLinkedin,
-    href: "https://www.linkedin.com/in/dalton-licause-b4874b97/"
+    href: "https://linkedin.com/in/daltonlicause"
   },
   {
     name: "GitHub",
