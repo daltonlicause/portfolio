@@ -9,5 +9,6 @@ export const HeadshotContainer = styled.div`
 
   img {
     scale: 1.2;
+    margin-left: 3px; // just a nudge
   }
 `;
